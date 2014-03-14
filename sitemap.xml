@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://hging.github.io/blog/2014/02/18/test/</loc>
+        <loc>http://www.hging.net/blog/2014/02/18/test/</loc>
         <lastmod>2014-03-14T14:30:45+08:00</lastmod>
     </url>
     <url>
-        <loc>http://hging.github.io/blog/2014/02/19/da-jian-zi-ji-de-blog/</loc>
+        <loc>http://www.hging.net/blog/2014/02/19/da-jian-zi-ji-de-blog/</loc>
         <lastmod>2014-03-14T14:30:45+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://hging.github.io/blog/2014/02/21/wan-mei-jie-jue-linuxxia-sublime-textzhong-wen-shu-ru/
+            http://www.hging.net/blog/2014/02/21/wan-mei-jie-jue-linuxxia-sublime-textzhong-wen-shu-ru/
         </loc>
         <lastmod>2014-03-14T14:30:45+08:00</lastmod>
     </url>
     <url>
-        <loc>http://hging.github.io/search.html</loc>
+        <loc>http://www.hging.net/search.html</loc>
         <lastmod>2014-03-14T14:30:45+08:00</lastmod>
     </url>
     <url>
-        <loc>http://hging.github.io/</loc>
+        <loc>http://www.hging.net/</loc>
         <lastmod>2014-03-14T14:30:45+08:00</lastmod>
     </url>
     <url>
-        <loc>http://hging.github.io/blog/archives/</loc>
+        <loc>http://www.hging.net/blog/archives/</loc>
         <lastmod>2014-03-14T14:30:45+08:00</lastmod>
     </url>
 </urlset>

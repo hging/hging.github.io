@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Hg's Blog]]></title>
-  <link href="http://hging.github.io/atom.xml" rel="self"/>
-  <link href="http://hging.github.io/"/>
-  <updated>2014-03-14T14:38:38+08:00</updated>
-  <id>http://hging.github.io/</id>
+  <link href="http://www.hging.net/atom.xml" rel="self"/>
+  <link href="http://www.hging.net/"/>
+  <updated>2014-03-14T14:40:05+08:00</updated>
+  <id>http://www.hging.net/</id>
   <author>
     <name><![CDATA[Hging]]></name>
     <email><![CDATA[hging3@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[完美解决Linux下Sublime Text中文输入]]></title>
-    <link href="http://hging.github.io/blog/2014/02/21/wan-mei-jie-jue-linuxxia-sublime-textzhong-wen-shu-ru/"/>
+    <link href="http://www.hging.net/blog/2014/02/21/wan-mei-jie-jue-linuxxia-sublime-textzhong-wen-shu-ru/"/>
     <updated>2014-02-21T12:59:55+08:00</updated>
-    <id>http://hging.github.io/blog/2014/02/21/wan-mei-jie-jue-linuxxia-sublime-textzhong-wen-shu-ru</id>
+    <id>http://www.hging.net/blog/2014/02/21/wan-mei-jie-jue-linuxxia-sublime-textzhong-wen-shu-ru</id>
     <content type="html"><![CDATA[<h3>参考Sublime Text官方论坛的一个<a href="http://www.sublimetext.com/forum/viewtopic.php?f=3&amp;t=7006&amp;start=10#p41343">回复</a>，通过以下方法完美解决Sublime Text 2中文输入的问题。</h3>
 
 <ul>
@@ -232,9 +232,9 @@
   
   <entry>
     <title type="html"><![CDATA[Bulit a blog by Octopress]]></title>
-    <link href="http://hging.github.io/blog/2014/02/19/da-jian-zi-ji-de-blog/"/>
+    <link href="http://www.hging.net/blog/2014/02/19/da-jian-zi-ji-de-blog/"/>
     <updated>2014-02-19T15:59:45+08:00</updated>
-    <id>http://hging.github.io/blog/2014/02/19/da-jian-zi-ji-de-blog</id>
+    <id>http://www.hging.net/blog/2014/02/19/da-jian-zi-ji-de-blog</id>
     <content type="html"><![CDATA[<h2>1、安装ruby</h2>
 
 <ul>
@@ -261,9 +261,9 @@
   
   <entry>
     <title type="html"><![CDATA[Test]]></title>
-    <link href="http://hging.github.io/blog/2014/02/18/test/"/>
+    <link href="http://www.hging.net/blog/2014/02/18/test/"/>
     <updated>2014-02-18T00:39:10+08:00</updated>
-    <id>http://hging.github.io/blog/2014/02/18/test</id>
+    <id>http://www.hging.net/blog/2014/02/18/test</id>
     <content type="html"><![CDATA[<p>Test</p>
 
 <hr />
