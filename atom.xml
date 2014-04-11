@@ -4,7 +4,7 @@
   <title><![CDATA[Hg's Blog]]></title>
   <link href="http://www.hging.net/atom.xml" rel="self"/>
   <link href="http://www.hging.net/"/>
-  <updated>2014-04-11T16:45:39+08:00</updated>
+  <updated>2014-04-11T16:49:28+08:00</updated>
   <id>http://www.hging.net/</id>
   <author>
     <name><![CDATA[Hging]]></name>
@@ -45,19 +45,6 @@
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>dpkg -l |grep ^rc|awk <span class="s1">&#39;{print $2}&#39;</span> |sudo xargs dpkg -P
 </span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[京东云擎(JAE)免费搭建moumentei]]></title>
-    <link href="http://www.hging.net/blog/2014/04/10/jing-dong-yun-qing-jae-mian-fei-da-jian-moumentei/"/>
-    <updated>2014-04-10T14:37:34+08:00</updated>
-    <id>http://www.hging.net/blog/2014/04/10/jing-dong-yun-qing-jae-mian-fei-da-jian-moumentei</id>
-    <content type="html"><![CDATA[<ul>
-<li><strong>部署环境</strong>： 京东云擎</li>
-<li>程序源代码可以参考github(<a href="https://github.com/qiushibaike/moumentei">https://github.com/qiushibaike/moumentei</a>)</li>
-</ul>
 
 ]]></content>
   </entry>
