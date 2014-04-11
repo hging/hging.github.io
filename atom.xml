@@ -4,7 +4,7 @@
   <title><![CDATA[Hg's Blog]]></title>
   <link href="http://www.hging.net/atom.xml" rel="self"/>
   <link href="http://www.hging.net/"/>
-  <updated>2014-04-11T16:49:28+08:00</updated>
+  <updated>2014-04-11T16:53:38+08:00</updated>
   <id>http://www.hging.net/</id>
   <author>
     <name><![CDATA[Hging]]></name>
@@ -20,7 +20,7 @@
     <id>http://www.hging.net/blog/2014/04/11/wan-mei-xie-zai-ubuntuxia-de-mysql-server</id>
     <content type="html"><![CDATA[<ul>
 <li><p><strong>系统</strong>: Ubuntu 13.10</p></li>
-<li><p><strong>删除 mysql</strong>*</p></li>
+<li><p><strong>删除 mysql</strong></p></li>
 </ul>
 
 
@@ -38,7 +38,7 @@
 <p>上面的其实有一些是多余的。</p>
 
 <ul>
-<li><strong>清理残留数据</strong>*</li>
+<li><strong>清理残留数据</strong></li>
 </ul>
 
 
