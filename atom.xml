@@ -4,7 +4,7 @@
   <title><![CDATA[Hg's Blog]]></title>
   <link href="http://www.hging.net/atom.xml" rel="self"/>
   <link href="http://www.hging.net/"/>
-  <updated>2014-04-11T16:53:38+08:00</updated>
+  <updated>2014-04-22T17:13:15+08:00</updated>
   <id>http://www.hging.net/</id>
   <author>
     <name><![CDATA[Hging]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[一句话实现webserver]]></title>
+    <link href="http://www.hging.net/blog/2014/04/22/webserver/"/>
+    <updated>2014-04-22T17:10:55+08:00</updated>
+    <id>http://www.hging.net/blog/2014/04/22/webserver</id>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">ruby</span> <span class="o">-</span><span class="n">run</span> <span class="o">-</span><span class="n">e</span> <span class="n">httpd</span> <span class="o">.</span> <span class="o">-</span><span class="nb">p</span> <span class="mi">30001</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[完美卸载ubuntu下的mysql-server]]></title>
