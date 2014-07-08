@@ -4,7 +4,7 @@
   <title><![CDATA[Hg's Blog]]></title>
   <link href="http://www.hging.net/atom.xml" rel="self"/>
   <link href="http://www.hging.net/"/>
-  <updated>2014-05-16T17:29:24+08:00</updated>
+  <updated>2014-07-08T17:16:07+08:00</updated>
   <id>http://www.hging.net/</id>
   <author>
     <name><![CDATA[Hging]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[run .bat in background]]></title>
+    <link href="http://www.hging.net/blog/2014/07/08/run-bat-in-background/"/>
+    <updated>2014-07-08T16:20:58+08:00</updated>
+    <id>http://www.hging.net/blog/2014/07/08/run-bat-in-background</id>
+    <content type="html"><![CDATA[<p>在.bat文件同级目录，新建一个.vbe，输入内容如下</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>set ws=wscript.createobject("wscript.shell")
+</span><span class='line'>ws.run "start.bat /start",0</span></code></pre></td></tr></table></div></figure>
+
+
+<p>其中 <code>start.bat</code> 为.bat文件的文件名</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[capistrano 部署指定版本到服务器]]></title>
