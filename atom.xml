@@ -4,7 +4,7 @@
   <title><![CDATA[Hg's Blog]]></title>
   <link href="http://www.hging.net/atom.xml" rel="self"/>
   <link href="http://www.hging.net/"/>
-  <updated>2014-12-17T18:17:07+08:00</updated>
+  <updated>2015-06-05T18:41:45+08:00</updated>
   <id>http://www.hging.net/</id>
   <author>
     <name><![CDATA[Hging]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The underlying hash algorithm has not yet been initialized.]]></title>
+    <link href="http://www.hging.net/blog/2015/06/05/The-underlying-hash-algorithm-has-not-yet-been-initialized/"/>
+    <updated>2015-06-05T18:34:31+08:00</updated>
+    <id>http://www.hging.net/blog/2015/06/05/The-underlying-hash-algorithm-has-not-yet-been-initialized</id>
+    <content type="html"><![CDATA[<p>该问题我是因为试用了<code>carrierwave-qiniu</code>插件,并且没有配置相应的qiniu的配置,导致上传图片时出现错误:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>The underlying hash algorithm has not yet been initialized.</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[run .bat in background]]></title>
