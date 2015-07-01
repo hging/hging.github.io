@@ -1,0 +1,216 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>论angularJs中ng-show和ng-if的区别 - Hg's Blog</title>
+    <meta name="author" content="Hging">
+    
+	<meta name="description" content="在angularJs中有几种判断方法, 有ng-hide, ng-show, ng-if
+在使用中遇到过坑, 该坑就是试用ng-show或者ng-hide时, 页面排班会因为有被隐藏的元素, 导致页面排版出现问题. 下面的代码是例子: 1
+2
+3
+4
+&lt;a class="badge &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Hg's Blog" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.ico" rel="shortcut icon">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+
+    <!-- remove or comment it to disable ajaxification -->   
+    <script src="/javascripts/ajaxify.js"></script>
+   
+    
+    
+
+</head>
+
+
+<body>
+    <div id="wrapper">
+    <header id="header" class="inner"><!-- for more effects see _animate.scss -->
+<h1 class="animated bounceInDown">
+    <div id="headerbg">
+        Hging
+    </div>
+</h1>
+<br>
+
+<ul id="social-links" style="text-align:center">
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+
+<!-- use full url including 'index.html' for navigation bar if you are using ajax -->
+<ul id="nav">
+	<li id="ajax"><a href="/index.html">Home</a></li>
+	<li id="ajax"><a href="/about/index.html">About</a></li>
+	<li id="ajax"><a href="/blog/archives/index.html">Archives</a></li>
+    <li><a href="/atom.xml">RSS</a></li>
+    
+    <li>
+    <div id="dark">
+        <form method="get" action="/search.html" id="search">
+            <input name="query" type="text" placeholder="Search..." x-webkit-speech />
+        </form>
+    </div>
+    </li>
+        
+</ul>
+
+
+
+
+</header>
+
+<div id="toload">
+<!-- begin toload --> 
+    <div id="content" class="inner">
+        <article class="post">
+	<h2 class="title">论angularJs中ng-show和ng-if的区别</h2>
+	<div class="entry-content"><p>在angularJs中有几种判断方法, 有<code>ng-hide</code>, <code>ng-show</code>, <code>ng-if</code>
+在使用中遇到过坑, 该坑就是试用<code>ng-show</code>或者<code>ng-hide</code>时, 页面排班会因为有被隐藏的元素, 导致页面排版出现问题.</p>
+
+<p>下面的代码是例子:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;a class="badge badge-energized" ng-show="article.type == '通知'"&gt;&lt;/a&gt;
+</span><span class='line'>&lt;a class="badge badge-royal" ng-show="article.type == '规范'"&gt;&lt;/a&gt;
+</span><span class='line'>&lt;a class="badge badge-calm" ng-show="article.type == '业务'"&gt;&lt;/a&gt;
+</span><span class='line'>&lt;a class="badge badge-balanced" ng-show="article.type == '酬金'"&gt;&lt;/a&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就是根据不同的文章类型, 显示不同的badge, 在使用<code>ng-show</code>的时候, 总会遇到badge上下不能对齐的问题, 经过排查发现<code>ng-show</code>仅仅是将元素的class中增加一个hide, 并不会移除元素. 这样会导致在排班的时候, 样式会有略微错位.</p>
+
+<p>讲代码改为:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;a class="badge badge-energized" ng-if="article.type == '通知'"&gt;&lt;/a&gt;
+</span><span class='line'>&lt;a class="badge badge-royal" ng-if="article.type == '规范'"&gt;&lt;/a&gt;
+</span><span class='line'>&lt;a class="badge badge-calm" ng-if="article.type == '业务'"&gt;&lt;/a&gt;
+</span><span class='line'>&lt;a class="badge badge-balanced" ng-if="article.type == '酬金'"&gt;&lt;/a&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后, 样式正常</p>
+</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2015/07/01/lun-angularjszhong-ng-showhe-ng-ifde-qu-bie/#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+	<!-- <div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
+</div>
+ -->
+<div class="share">
+    <div class="bshare-custom icon-medium-plus">
+        <div class="bsPromo bsPromo2"></div><a title="分享到" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">分享到</a>
+        <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+        <a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);"></a>
+        <a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);"></a>
+        <a title="分享到电子邮件" class="bshare-email" href="javascript:void(0);"></a>
+        <a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a>
+        <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a>
+        <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+        <span class="BSHARE_COUNT bshare-share-count" style="float: none;">24.7K</span>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=9114ba64-5e60-4f15-98da-cb5e8f55a6cf&amp;pophcol=2&amp;lang=zh"></script>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+</div>
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+    </div>
+    <footer id="footer">
+    <div style="display:inline">
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff44cd1050c9a053a262e9acc17e6c9eb' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	Copyright &copy; 2015
+	
+	Hging
+	. Powered by <a href="http://octopress.org">Octopress</a> | 
+	Theme <a href="http://github.com/panks/fabric">fabric</a> by <a href="http://panks.me">Pankaj Kumar</a>
+</div>
+
+
+    </footer>
+    <script src="/javascripts/fabric.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'hging';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.hging.net/blog/2015/07/01/lun-angularjszhong-ng-showhe-ng-ifde-qu-bie/';
+        var disqus_url = 'http://www.hging.net/blog/2015/07/01/lun-angularjszhong-ng-showhe-ng-ifde-qu-bie/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+<!-- end toload --> 
+</div>
+</div>
+<script src="/javascripts/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+;(function($){$().UItoTop({easingType:'easeOutCirc'});})(jQuery); 
+/*]]>*/
+</script><!-- remove it to remove the scroll to top button -->
+</body>
+</html>
