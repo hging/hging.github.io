@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 排版 | Hg's Blog]]></title>
+  <link href="http://www.hging.net/blog/categories/pai-ban/atom.xml" rel="self"/>
+  <link href="http://www.hging.net/"/>
+  <updated>2015-07-01T17:42:26+08:00</updated>
+  <id>http://www.hging.net/</id>
+  <author>
+    <name><![CDATA[Hging]]></name>
+    <email><![CDATA[hging3@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[论angularJs中ng-show和ng-if的区别]]></title>
+    <link href="http://www.hging.net/blog/2015/07/01/lun-angularjszhong-ng-showhe-ng-ifde-qu-bie/"/>
+    <updated>2015-07-01T17:27:26+08:00</updated>
+    <id>http://www.hging.net/blog/2015/07/01/lun-angularjszhong-ng-showhe-ng-ifde-qu-bie</id>
+    <content type="html"><![CDATA[<p>在angularJs中有几种判断方法, 有<code>ng-hide</code>, <code>ng-show</code>, <code>ng-if</code>
+在使用中遇到过坑, 该坑就是试用<code>ng-show</code>或者<code>ng-hide</code>时, 页面排班会因为有被隐藏的元素, 导致页面排版出现问题.</p>
+
+<p>下面的代码是例子:
+<code>
+&lt;a class="badge badge-energized" ng-show="article.type == '通知'"&gt;&lt;/a&gt;
+&lt;a class="badge badge-royal" ng-show="article.type == '规范'"&gt;&lt;/a&gt;
+&lt;a class="badge badge-calm" ng-show="article.type == '业务'"&gt;&lt;/a&gt;
+&lt;a class="badge badge-balanced" ng-show="article.type == '酬金'"&gt;&lt;/a&gt;
+</code></p>
+
+<p>就是根据不同的文章类型, 显示不同的badge, 在使用<code>ng-show</code>的时候, 总会遇到badge上下不能对齐的问题, 经过排查发现<code>ng-show</code>仅仅是将元素的class中增加一个hide, 并不会移除元素. 这样会导致在排班的时候, 样式会有略微错位.</p>
+
+<p>讲代码改为:
+<code>
+&lt;a class="badge badge-energized" ng-if="article.type == '通知'"&gt;&lt;/a&gt;
+&lt;a class="badge badge-royal" ng-if="article.type == '规范'"&gt;&lt;/a&gt;
+&lt;a class="badge badge-calm" ng-if="article.type == '业务'"&gt;&lt;/a&gt;
+&lt;a class="badge badge-balanced" ng-if="article.type == '酬金'"&gt;&lt;/a&gt;
+</code>
+之后, 样式正常</p>
+]]></content>
+  </entry>
+  
+</feed>
